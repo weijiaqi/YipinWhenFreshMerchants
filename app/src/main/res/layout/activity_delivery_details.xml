@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.DeliveryDetailsActivity">
+
+    <include layout="@layout/common_base" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="上传凭证"
+        android:textColor="@color/color_1f"
+        android:textSize="@dimen/sp_16" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcysmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/dp_15"
+        android:overScrollMode="never" />
+
+
+    <TextView
+        android:id="@+id/Ordernumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_15"
+        android:text="订单号：46995543175044.3008"
+        android:textColor="@color/color_1f"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/Addressee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_15"
+        android:text="收件人：初立秋"
+        android:textColor="@color/color_1f"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_15"
+        android:text="地址 : 北京市马驹桥镇米拉小镇34号楼1单元2001"
+        android:textColor="@color/color_1f"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_15"
+        android:text="时间 : 2020-04-15"
+        android:textColor="@color/color_1f"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_15"
+        android:text="商品数：11件"
+        android:textColor="@color/color_1f"
+        android:textSize="@dimen/sp_13" />
+
+    <TextView
+        android:id="@+id/Confirmation"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:text="确认送达"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/sp_14"
+        android:background="@drawable/bg_5r_border" />
+
+</LinearLayout>

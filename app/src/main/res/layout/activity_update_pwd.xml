@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.UpdatePwdActivity">
+
+    <include layout="@layout/common_base" />
+
+    <EditText
+        android:id="@+id/Oldpassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@null"
+        android:hint="输入旧密码"
+        android:paddingLeft="@dimen/dp_10"
+        android:textColorHint="@color/color_99"
+        android:textSize="@dimen/sp_12" />
+
+    <EditText
+        android:id="@+id/Newpassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@null"
+        android:hint="输入新密码"
+        android:paddingLeft="@dimen/dp_10"
+        android:textColorHint="@color/color_99"
+        android:textSize="@dimen/sp_12" />
+
+    <EditText
+        android:id="@+id/CofimNewpassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@null"
+        android:hint="确认新密码"
+        android:paddingLeft="@dimen/dp_10"
+        android:textColorHint="@color/color_99"
+        android:textSize="@dimen/sp_12" />
+
+
+    <TextView
+        android:id="@+id/cofimupdate"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/bg_11blue_border"
+        android:gravity="center"
+        android:text="确 认 更 改"
+        android:textSize="@dimen/sp_13"
+        android:textColor="@color/white" />
+</LinearLayout>

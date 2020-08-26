@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.UpdateAddressActivity">
+
+    <include layout="@layout/common_base" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:gravity="center_vertical"
+            android:text="姓名"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/color_1f" />
+
+        <EditText
+            android:id="@+id/writename"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/name"
+            android:background="@null"
+            android:textSize="@dimen/sp_13"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@color/color_99" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:gravity="center_vertical"
+            android:text="电话"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/color_1f" />
+
+        <EditText
+            android:id="@+id/writephone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/phone"
+            android:background="@null"
+            android:textSize="@dimen/sp_13"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@color/color_99" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:gravity="center_vertical"
+            android:text="地址"
+            android:textSize="@dimen/sp_13"
+            android:textColor="@color/color_1f" />
+
+        <EditText
+            android:id="@+id/writeaddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/address"
+            android:background="@null"
+            android:textSize="@dimen/sp_13"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:background="@color/color_99" />
+
+    <TextView
+        android:id="@+id/saveupdate"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15"
+        android:text="保存修改"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/sp_14"
+        android:background="@drawable/bg_5r_border" />
+
+</LinearLayout>

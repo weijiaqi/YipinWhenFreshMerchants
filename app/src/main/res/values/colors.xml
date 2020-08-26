@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="color_67">#3660D0</color>
+    <color name="color_84">#848484</color>
+    <color name="app_color_f6">#f6f6f6</color>
+    <color name="color_1f">#333333</color>
+    <color name="color_2b">#2BA0FE</color>
+    <color name="color_99">#999999</color>
+    <color name="color_fd">#FD7B6E</color>
+    <color name="color_27">#279FFF</color>
+    <color name="color_00">#000000</color>
+    <color name="color_f4">#f4f4f4</color>
+    <color name="text_primary">#DF000000</color>
+    <color name="color_66">#666666</color>
+    <color name="color_cf">#CFCFCF</color>
+    <color name="color_af">#AFAFAF</color>
+    <color name="color_1c">#1C75BC</color>
+    <color name="color_23">#232323</color>
+    <color name="color_color66">#666666</color>
+    <color name="color_b7">#B7B7B7</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="color_cd">#CDE7FC</color>
+    <color name="color_6c">#666666</color>
+    <color name="color_26">#2693EB</color>
+    <color name="color_86">#868686</color>
+    <color name="color_red">#E80000</color>
+    <color name="colorGrayTertiary">#EEEEEE</color>
+    <color name="textColorSecondary">#999999</color>
+</resources>

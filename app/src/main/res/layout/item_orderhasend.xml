@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlall"
+    android:layout_marginLeft="@dimen/dp_15"
+    android:layout_marginTop="@dimen/dp_10">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/purchase"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/bg_5red_border"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/Ordernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="订单号：GJOLJ545GWAA537"
+            android:textColor="@color/color_1f" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="已完结"
+            android:layout_marginRight="@dimen/dp_16"
+            android:textColor="#2BA0FE"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="Wie佳琪"
+        android:textColor="@color/color_1f"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name"
+        android:layout_marginTop="@dimen/dp_5"
+        android:text="1111111111"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/color_1f" />
+
+    <TextView
+        android:id="@+id/dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginTop="@dimen/dp_15"
+        android:text="111111111111"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dates"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/Commodity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品数:1111111"
+            android:textSize="@dimen/sp_12"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/Actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_toRightOf="@+id/Commodity"
+            android:gravity="center"
+            android:text="111111111111"
+            android:textSize="@dimen/sp_12"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/Print_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rlFruits"
+        android:layout_width="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/Fruits"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:scaleType="fitXY"
+
+            android:src="@mipmap/print" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Fruits"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="水果"
+            android:textSize="@dimen/sp_10"
+            android:textColor="@color/color_1f" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rlVegetables"
+        android:layout_width="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/Vegetables"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:scaleType="fitXY"
+
+            android:src="@mipmap/print" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Vegetables"
+
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="蔬菜"
+            android:textSize="@dimen/sp_10"
+            android:textColor="@color/color_1f" />
+
+    </RelativeLayout>
+</RelativeLayout>

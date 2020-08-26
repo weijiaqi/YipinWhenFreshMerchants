@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white">
+
+        <FrameLayout
+            android:id="@+id/iv_title_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/img_found" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_50"
+                android:text="发现新版本"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_30" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_title_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_title_image"
+            android:layout_marginTop="21.5dp"
+            android:paddingLeft="@dimen/dp_26"
+            android:text="[新版本特性]"
+            android:textColor="#333333"
+            android:textSize="@dimen/dp_12" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dialog_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_name"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_26"
+            android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/ll_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_name"
+            android:layout_marginTop="13.5dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_26">
+
+            <TextView
+                android:id="@+id/update_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="@dimen/dp_11" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@drawable/btn_shape"
+            android:paddingLeft="@dimen/dp_81"
+            android:paddingRight="@dimen/dp_81"
+            android:text="立即更新"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_16" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/icon_close_new" />
+
+
+</RelativeLayout>

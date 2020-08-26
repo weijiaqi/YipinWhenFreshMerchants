@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_no_network"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:src="@mipmap/loadingerror" />-->
+
+        <TextView
+            android:id="@+id/no_network_view_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_14"
+            android:text="网络似乎出现了点问题"
+            android:textColor="@color/color_84"
+            android:textSize="@dimen/sp_14" />
+
+        <RelativeLayout
+            android:id="@+id/rl_reload_loading"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="@dimen/dp_11"
+            android:background="@drawable/bg_blue_border">
+
+            <TextView
+                android:id="@+id/reload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="重新加载"
+                android:textColor="@color/color_67"
+                android:textSize="@dimen/sp_12" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

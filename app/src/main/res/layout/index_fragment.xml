@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.product.as.merchants.view.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        app:contentView="@layout/index_view_fragment"
+        app:emptyView="@layout/view_empty"
+        app:errorView="@layout/view_error"
+        app:loadingView="@layout/view_loading"
+        app:noNetworkView="@layout/view_no_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

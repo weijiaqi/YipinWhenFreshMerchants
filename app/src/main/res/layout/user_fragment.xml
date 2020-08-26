@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_base" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_91"
+        android:layout_marginTop="@dimen/dp_14">
+
+        <com.product.as.merchants.view.CircleImageView
+            android:id="@+id/headpic"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dp_27"
+            android:layout_marginLeft="@dimen/dp_27"
+            android:layout_marginTop="@dimen/dp_11"
+            android:src="@mipmap/testhead" />
+
+        <TextView
+            android:id="@+id/storename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/dp_97"
+            android:layout_marginLeft="@dimen/dp_97"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="风早的店"
+            android:textColor="@color/color_1f"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/storename"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/dp_97"
+            android:layout_marginLeft="@dimen/dp_97"
+            android:layout_marginTop="@dimen/dp_3"
+            android:text=""
+            android:textSize="@dimen/sp_10" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_25"
+            android:layout_below="@+id/shop"
+            android:layout_marginStart="@dimen/dp_97"
+            android:layout_marginLeft="@dimen/dp_97"
+            android:layout_marginTop="@dimen/dp_3"
+            android:src="@mipmap/certified" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_12"
+        android:background="#F7F4F8" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/My_release"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            stv:sDividerLineType="none"
+            stv:sLeftIconMarginLeft="@dimen/dp_20"
+            stv:sLeftIconRes="@mipmap/assets"
+            stv:sLeftIconWidth="@dimen/dp_20"
+            stv:sLeftIconHeight="@dimen/dp_20"
+            stv:sLeftTextColor="@color/color_color66"
+            stv:sLeftTextSize="@dimen/sp_14"
+            stv:sLeftTextString="账户资产"
+            stv:sLeftViewMarginLeft="@dimen/dp_10"
+            stv:sRightTextSize="@dimen/sp_12"
+            stv:sRightTvDrawableLeft="@mipmap/rightarrow" />
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/transaction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            stv:sDividerLineType="none"
+            stv:sLeftIconWidth="@dimen/dp_20"
+            stv:sLeftIconHeight="@dimen/dp_20"
+            stv:sLeftIconMarginLeft="@dimen/dp_20"
+            stv:sLeftIconRes="@mipmap/storehome"
+            stv:sLeftTextColor="@color/color_color66"
+            stv:sLeftTextSize="@dimen/sp_14"
+            stv:sLeftTextString="成员管理"
+            stv:sLeftViewMarginLeft="@dimen/dp_10"
+            stv:sRightTextSize="@dimen/sp_12"
+            stv:sRightTvDrawableLeft="@mipmap/rightarrow" />
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/My_invitation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@null"
+            stv:sDividerLineType="none"
+            stv:sLeftIconWidth="@dimen/dp_20"
+            stv:sLeftIconHeight="@dimen/dp_20"
+            stv:sLeftIconMarginLeft="@dimen/dp_20"
+            stv:sLeftIconRes="@mipmap/chat"
+            stv:sLeftTextColor="@color/color_color66"
+            stv:sLeftTextSize="@dimen/sp_14"
+            stv:sLeftTextString="意见反馈"
+            stv:sLeftViewMarginLeft="@dimen/dp_10"
+            stv:sRightTextSize="@dimen/sp_12"
+            stv:sRightTvDrawableLeft="@mipmap/rightarrow" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/User_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@null"
+            stv:sDividerLineType="none"
+            stv:sLeftIconWidth="@dimen/dp_20"
+            stv:sLeftIconHeight="@dimen/dp_20"
+            stv:sLeftIconMarginLeft="@dimen/dp_20"
+            stv:sLeftIconRes="@mipmap/accountdown"
+            stv:sLeftTextColor="@color/color_color66"
+            stv:sLeftTextSize="@dimen/sp_14"
+            stv:sLeftTextString="隐私条款"
+            stv:sLeftViewMarginLeft="@dimen/dp_10"
+            stv:sRightTextSize="@dimen/sp_12"
+            stv:sRightTvDrawableLeft="@mipmap/rightarrow" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/about_me"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            stv:sDividerLineType="none"
+            stv:sLeftIconMarginLeft="@dimen/dp_21"
+            stv:sLeftIconRes="@mipmap/customer"
+            stv:sLeftTextColor="@color/color_color66"
+            stv:sLeftTextSize="@dimen/sp_14"
+            stv:sLeftTextString="客服"
+            stv:sLeftViewMarginLeft="@dimen/dp_10"
+            stv:sRightIconMarginRight="@dimen/dp_20"
+            stv:sLeftIconWidth="@dimen/dp_20"
+            stv:sLeftIconHeight="@dimen/dp_20"
+            stv:sRightIconRes="@mipmap/rightarrow"
+            stv:sRightTextColor="@color/color_b7"
+            stv:sRightTextSize="@dimen/sp_12" />
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/Setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            stv:sDividerLineType="none"
+            stv:sLeftIconMarginLeft="@dimen/dp_22"
+            stv:sLeftIconRes="@mipmap/seeting"
+            stv:sLeftTextColor="@color/color_color66"
+            stv:sLeftTextSize="@dimen/sp_14"
+            stv:sLeftIconWidth="@dimen/dp_20"
+            stv:sLeftIconHeight="@dimen/dp_20"
+            stv:sLeftTextString="设置"
+            stv:sLeftViewMarginLeft="@dimen/dp_10"
+            stv:sRightTextSize="@dimen/sp_12"
+            stv:sRightTvDrawableLeft="@mipmap/rightarrow" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F4F8" />
+</LinearLayout>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.StoreInformationNextActivity">
+
+    <include layout="@layout/common_basetwo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_22"
+                android:text="相关证件上传"
+                android:textColor="@color/color_00"
+                android:textSize="@dimen/sp_23" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_148">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="*"
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="营业执照"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <ImageView
+                    android:id="@+id/doorface"
+                    android:layout_width="@dimen/dp_59"
+                    android:layout_height="@dimen/dp_59"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginLeft="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/doorface" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/doorface"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_29"
+                    android:text="需文字清晰、边框完整、露出国徽，复印件需加盖印章。也可提供监管部门认可的具有营业执照等法律效力的证件"
+                    android:textColor="@color/color_color66"
+                    android:textSize="@dimen/sp_10"
+                    tools:ignore="RtlCompat" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_142">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="*"
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="许可证"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <ImageView
+                    android:id="@+id/Licence"
+                    android:layout_width="@dimen/dp_59"
+                    android:layout_height="@dimen/dp_59"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginLeft="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/doorface" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Licence"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_29"
+                    android:text="需文字清晰、边框完整、露出国徽，复印件需加盖印章。也可提供监管部门认可的具有经营许可证等法律效力的证件"
+                    android:textColor="@color/color_color66"
+                    android:textSize="@dimen/sp_10"
+                    tools:ignore="RtlCompat" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_123">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="*"
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="法人身份证 正面"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <ImageView
+                    android:id="@+id/FrontIdCard"
+                    android:layout_width="@dimen/dp_59"
+                    android:layout_height="@dimen/dp_59"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginLeft="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/doorface" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/FrontIdCard"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_29"
+                    android:text="请上传法定代表人或开店人身份证人像面照片，需照片清晰、完整、无遮挡"
+                    android:textColor="@color/color_color66"
+                    android:textSize="@dimen/sp_10"
+                    tools:ignore="RtlCompat" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_123">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="*"
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="法人身份证 反面"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <ImageView
+                    android:id="@+id/FrontIdsideCard"
+                    android:layout_width="@dimen/dp_59"
+                    android:layout_height="@dimen/dp_59"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginLeft="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/doorface" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/FrontIdsideCard"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_29"
+                    android:text="请上传法定代表人或开店人身份证人像面照片，需照片清晰、完整、无遮挡"
+                    android:textColor="@color/color_color66"
+                    android:textSize="@dimen/sp_10"
+                    tools:ignore="RtlCompat" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_138">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text=""
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="经办人身份证 正面"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <ImageView
+                    android:id="@+id/Handphotograph"
+                    android:layout_width="@dimen/dp_59"
+                    android:layout_height="@dimen/dp_59"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginLeft="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/doorface" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Handphotograph"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_29"
+                    android:text="请上传法定代表人或开店人身份证人像面照片，需照片清晰、完整、无遮挡"
+                    android:textColor="@color/color_color66"
+                    android:textSize="@dimen/sp_10"
+                    tools:ignore="RtlCompat" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_138">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text=""
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="经办人身份证 反面"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <ImageView
+                    android:id="@+id/HandphotographSide"
+                    android:layout_width="@dimen/dp_59"
+                    android:layout_height="@dimen/dp_59"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginLeft="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/doorface" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/HandphotographSide"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_29"
+                    android:text="请上传法定代表人或开店人身份证人像面照片，需照片清晰、完整、无遮挡"
+                    android:textColor="@color/color_color66"
+                    android:textSize="@dimen/sp_10"
+                    tools:ignore="RtlCompat" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_25">
+
+                <TextView
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="上一步"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:background="@drawable/bg_99_border"
+                    android:textColor="@color/color_99" />
+
+                <TextView
+                    android:id="@+id/end"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_15blue_border"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:layout_marginRight="@dimen/dp_25"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlCompat" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">一码当鲜</string>
+
+    <string-array name="tabs_order">
+        <item>全部</item>
+        <item>已上架</item>
+        <item>已下架</item>
+    </string-array>
+
+    <string-array name="order_tables">
+        <item>待发货</item>
+        <item>已发货</item>
+        <item>已完结</item>
+        <item>采购清单</item>
+        <item>全部订单</item>
+    </string-array>
+
+    <string-array name="order_courier">
+        <item>物流清单</item>
+        <item>商品清单</item>
+        <item>设置</item>
+    </string-array>
+
+    <string-array name="order_couriers">
+        <item>司机列表</item>
+        <item>设置</item>
+    </string-array>
+
+    <string-array name="platform_order">
+        <item>用户订单</item>
+        <item>发货订单</item>
+    </string-array>
+    <string-array name="order_platformcouriers">
+        <item>配送清单</item>
+        <item>商品清单</item>
+    </string-array>
+    <string name="login_empty_phone" tools:ignore="MissingTranslation">手机号码不能为空!</string>
+    <string name="please_correct_phone" tools:ignore="MissingTranslation">请填写正确的手机号!</string>
+    <string name="send_success" tools:ignore="MissingTranslation">发送成功</string>
+</resources>

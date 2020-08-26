@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.product.as.merchants">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- 允许程序连接到已配对的蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- 允许程序发现和配对蓝牙设备 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 允许程序发现和配对蓝牙设备 -->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 地理位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".api.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon,android:theme,android:allowBackup">
+        <activity android:name=".ui.UserAllGroupActivity"></activity>
+        <activity android:name=".ui.UserAllTobeActivity" />
+        <activity android:name=".ui.PlatformProductDetailsActivity" />
+        <activity android:name=".ui.SalerListActivity" />
+        <activity android:name=".ui.PlatformConstActivity" />
+        <activity android:name=".PlatformlevelMainActivity" />
+        <activity android:name=".ui.AgentWebActivity" />
+        <activity android:name=".ui.UserInformationActivity" />
+        <activity android:name=".ui.UpdateDriverActivity" />
+        <activity android:name=".ui.ListDetailActivity" />
+        <activity android:name=".ui.AllGroupActivity" />
+        <activity android:name=".ui.AllToBeActivity" />
+        <activity android:name=".ui.DeliveryDetailsActivity" />
+        <activity android:name=".ui.PurchaseDetailsActivity" />
+        <activity android:name=".ui.ListActivity" />
+        <activity android:name=".ui.CourierMainActivity" />
+        <activity android:name=".ui.EditingBankInformationActivity" />
+        <activity android:name=".ui.CourierActivity" />
+        <activity android:name=".ui.BindingAlipayActivity" />
+        <activity android:name=".ui.CashWithdrawalActivity" />
+        <activity android:name=".ui.CommodityCategoryTwoActivity" />
+        <activity android:name=".ui.AddMemNextberActivity" />
+        <activity android:name=".ui.AddMemberActivity" />
+        <activity android:name=".ui.MemberManagementActivity" />
+        <activity android:name=".ui.UpdatePwdActivity" />
+        <activity android:name=".ui.AccountAssetsActivity" />
+        <activity
+            android:name=".ui.ProductDetailsActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.UpdateAddressActivity" />
+        <activity
+            android:name=".ui.GroupPurchaseActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.ToBeShippedActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.CommodityCategoryActivity" />
+        <activity android:name=".ui.SettingActivity" /> <!-- <activity android:name=".ui.TestActivity"></activity> -->
+        <activity android:name=".ui.UnderReviewActivity" />
+        <activity android:name=".ui.StoreInformationNextActivity" />
+        <activity
+            android:name=".ui.StoreInformationActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.ShopGuideActivity" />
+
+        <service
+            android:name=".api.ApiInterface"
+            android:exported="false" />
+
+        <activity android:name=".ui.RegisterNextActivity" />
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".ui.ReleaseCommoditiesActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.product.as.merchants.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".bluetooth.BluetoothListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="蓝牙设备列表" />
+        <activity android:name=".SearchBluetoothActivity" />
+    </application>
+
+</manifest>

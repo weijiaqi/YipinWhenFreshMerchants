@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.StoreInformationActivity">
+
+    <include layout="@layout/common_basetwo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_22"
+                android:text="基本信息"
+                android:textColor="@color/color_00"
+                android:textSize="@dimen/sp_23" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_120">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="*"
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="门脸照"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <ImageView
+                    android:id="@+id/doorface"
+                    android:layout_width="@dimen/dp_59"
+                    android:layout_height="@dimen/dp_59"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginLeft="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/doorface" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/doorface"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_29"
+                    android:text="需拍全，包含完整的牌匾，门槛(建议正对门，门店2米处拍摄）"
+                    android:textColor="@color/color_color66"
+                    android:textSize="@dimen/sp_10"
+                    tools:ignore="RtlCompat" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:text="*"
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="门店名称"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:background="@null"
+                    android:hint="需与门脸照牌匾一致"
+                    android:paddingTop="@dimen/dp_5"
+                    android:textColorHint="@color/color_66"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="分店名称"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/branch_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:background="@null"
+                    android:hint="如：青年路店"
+                    android:paddingTop="@dimen/dp_5"
+                    android:textColorHint="@color/color_66"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_107">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="店内照"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <ImageView
+                    android:id="@+id/Shopphoto"
+                    android:layout_width="@dimen/dp_59"
+                    android:layout_height="@dimen/dp_59"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginLeft="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/doorface" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Shopphoto"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_29"
+                    android:text="需真实展示场景"
+                    android:textColor="@color/color_color66"
+                    android:textSize="@dimen/sp_10"
+                    tools:ignore="RtlCompat" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_107">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="*"
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_21"
+                    android:text="门店LGOO"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <ImageView
+                    android:id="@+id/storelogo"
+                    android:layout_width="@dimen/dp_59"
+                    android:layout_height="@dimen/dp_59"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginLeft="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_22"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/doorface" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/storelogo"
+                    android:layout_marginStart="@dimen/dp_123"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:layout_marginEnd="@dimen/dp_29"
+                    android:text="完成开店后可随时修改，大小不超过500k"
+                    android:textColor="@color/color_color66"
+                    android:textSize="@dimen/sp_10"
+                    tools:ignore="RtlCompat" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_22"
+                android:text="经营信息"
+                android:textColor="@color/color_00"
+                android:textSize="@dimen/sp_18" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_51"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:text="*"
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="门店地址"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/Province"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:background="@null"
+                    android:hint="省 - 市 - 区/县"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/color_66"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_125"
+                android:background="@null"
+                android:hint="请填写门店详细地址"
+                android:paddingTop="@dimen/dp_3"
+                android:textColorHint="@color/color_66"
+                android:textSize="@dimen/sp_10" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_125"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_49"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="*"
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="主要经营"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/major"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:hint="请输入经营品类"
+                    android:paddingTop="@dimen/dp_2"
+                    android:textColorHint="@color/color_66"
+                    android:textSize="@dimen/sp_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=">"
+                    android:textColor="@color/color_color66"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_125"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_49"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="次要经营"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:layout_marginRight="@dimen/dp_40"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:hint="请输入经营品类"
+                    android:paddingTop="@dimen/dp_2"
+                    android:textColorHint="@color/color_66"
+                    android:textSize="@dimen/sp_10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=">"
+                    android:textColor="@color/color_color66"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:text="*"
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="老板姓名"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/boss"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:background="@null"
+                    android:hint="请填写门店经营者的姓名"
+                    android:paddingTop="@dimen/dp_3"
+                    android:textColorHint="@color/color_66"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:text="*"
+                    android:textColor="#FF0000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_4"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="老板手机"
+                    android:textColor="@color/color_1f"
+                    android:textSize="@dimen/sp_15" />
+
+                <EditText
+                    android:id="@+id/tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:background="@null"
+                    android:hint="159xxxxx597"
+                    android:inputType="number"
+                    android:paddingTop="@dimen/dp_3"
+                    android:textColorHint="@color/color_66"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="@dimen/dp_25"
+                android:layout_marginRight="@dimen/dp_25"
+                android:background="@color/color_99" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp_25">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/SaveDraft"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="保存草稿"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:background="@drawable/bg_99_border"
+                    android:textColor="@color/color_99" />
+
+                <TextView
+                    android:id="@+id/next"
+                    android:layout_width="@dimen/dp_150"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_15blue_border"
+                    android:gravity="center"
+                    android:text="下一步"
+                    android:layout_marginRight="@dimen/dp_25"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlCompat" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

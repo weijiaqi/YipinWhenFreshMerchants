@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".ui.AddMemNextberActivity">
+
+    <include layout="@layout/common_base" />
+
+    <RelativeLayout
+        android:id="@+id/rlposition"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:text="职位"
+            android:textColor="@color/color_1f"
+            android:textSize="@dimen/sp_15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:src="@mipmap/rightarrow"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_25"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/color_1f"
+        android:textSize="@dimen/sp_15" />
+
+</LinearLayout>
